@@ -1,0 +1,14 @@
+---
+import { Font } from "astro:assets"
+import "../assets/styles/global.css"
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <Font cssVariable="--font-kyrios" preload />
+  <Font cssVariable="--font-davinci" preload />
+  <title>Astro</title>
+</head>

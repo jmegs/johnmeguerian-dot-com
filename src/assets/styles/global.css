@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+	--font-display: var(--font-kyrios);
+	--font-serif: var(--font-davinci);
+}
+
+body {
+	background-color: #fcf6ee;
+	color: #060302;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #060302;
+		color: #fcf6ee;
+	}
+}
+
