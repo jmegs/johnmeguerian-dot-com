@@ -4,6 +4,7 @@ import "./globals.css"
 
 const departureMono = localFont({
 	src: "../public/DepartureMono-Regular.woff2",
+	display: "swap",
 	variable: "--font-departure-mono",
 })
 
