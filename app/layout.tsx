@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
+import Fathom from "./fathom"
 
 const departureMono = localFont({
 	src: "../public/DepartureMono-Regular.woff2",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${departureMono.variable} h-full antialiased`}>
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex flex-col">
+				<Fathom />
+				{children}
+			</body>
 		</html>
 	)
 }
