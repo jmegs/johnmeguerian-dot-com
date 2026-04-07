@@ -28,6 +28,11 @@ body {
 	font-size: var(--text-sm);
 }
 
+::selection {
+	background-color: var(--foreground);
+	color: var(--background);
+}
+
 .page-grid {
 	display: grid;
 	grid:
