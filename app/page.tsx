@@ -1,15 +1,17 @@
-import Image from "next/image"
 import AvatarImage from "./avatar.png"
 import { BaffleText } from "./baffle-text"
+import { GlitchAvatar } from "./glitch-avatar"
 
 export default function Home() {
 	return (
 		<div className="page-grid | p-8 h-screen uppercase text-center lg:text-left">
 			<div id="uno" className="lg:mt-auto">
-				<Image
-					src={AvatarImage}
+				<GlitchAvatar
+					src={AvatarImage.src}
 					alt="picture of john"
-					loading="eager"
+					size={64}
+					delay={0}
+					duration={900}
 					className="mx-auto mb-4 lg:m-0 size-16 rounded-full border-4 border-wash"
 				/>
 			</div>
